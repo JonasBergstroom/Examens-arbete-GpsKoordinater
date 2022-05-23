@@ -6,6 +6,6 @@ pluginManagement {
     }
 }
 
-rootProject.name = "GpsKoordinater"
-include(":androidApp")
+rootProject.name = "GpsAppKMM"
+include(":android")
 include(":shared")

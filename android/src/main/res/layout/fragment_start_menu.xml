@@ -3,7 +3,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:id="@+id/fragment_start">
+    tools:context=".ui.newtest.StartMenuFragment">
 
     <LinearLayout
         android:layout_width="match_parent"
@@ -34,20 +34,18 @@
                 android:orientation="vertical">
 
                 <LinearLayout
-                    android:id="@+id/start_fragment_container"
+                    android:id="@+id/test3_container"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
-                    android:layout_marginTop="30dp"
-                    android:layout_marginBottom="2dp"
+                    android:layout_marginTop="2dp"
+                    android:layout_marginBottom="30dp"
                     android:background='#FFF'
                     android:orientation="horizontal"
-                    android:padding="10dp"
-                    >
+                    android:padding="10dp">
 
                     <ImageView
                         android:layout_width="60dp"
                         android:layout_height="60dp"
-                        android:layout_marginRight="20dp"
                         android:layout_weight="1" />
 
                     <LinearLayout
@@ -61,17 +59,17 @@
                         <TextView
                             android:layout_width="wrap_content"
                             android:layout_height="wrap_content"
-                            android:fontFamily=""
-                            android:text="Start"
-                            android:textColor="#2f651a"
+                            android:fontFamily="@font/open_sans_regular"
+                            android:text="@string/start_menu_infolabel"
+                            android:textColor="@color/darkBlue"
                             android:textSize="16sp" />
 
                         <TextView
                             android:layout_width="wrap_content"
                             android:layout_height="wrap_content"
-                            android:fontFamily=""
-                            android:text=""
-                            android:textColor="#2f651a"
+                            android:fontFamily="@font/open_sans_semi_bold"
+                            android:text="@string/start_menu_infolabel"
+                            android:textColor="@color/darkBlue"
                             android:textSize="16sp" />
                     </LinearLayout>
 
@@ -83,16 +81,24 @@
                     android:orientation="vertical">
 
                     <TextView
-                        android:id="@+id/about_the_app_text"
+                        android:id="@+id/about_the_tests_title"
                         android:layout_width="match_parent"
-                        android:layout_height="562dp"
-                        android:background="#808080"
-                        android:fontFamily=""
+                        android:layout_height="wrap_content"
+                        android:fontFamily="@font/open_sans_semi_bold"
                         android:padding="20dp"
-                        android:text="Info about the app"
-                        android:textColor="#2f651a"
+                        android:text="@string/start_menu_infolabel"
+                        android:textColor="@color/darkBlue"
                         android:textSize="16sp" />
 
+                    <TextView
+                        android:id="@+id/about_the_tests_text"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:fontFamily="@font/open_sans_regular"
+                        android:paddingHorizontal="20dp"
+                        android:paddingBottom="40dp"
+                        android:text="@string/start_menu_infotext"
+                        android:textColor="#4d4d4d"                       android:textSize="16sp" />
                 </LinearLayout>
 
             </LinearLayout>

@@ -7,16 +7,27 @@
 
     <fragment
         android:id="@+id/startScreenFragment"
+        android:name="se.gpsappkmm.gpsappkmm.android.ui.startscreen.StartScreenFragment"
         android:label="fragment_start_screen"
         tools:layout="@layout/fragment_start_screen">
         <action
-            android:id="@+id/navigate_from_startScreenFragment_to_fragment_start"
-            app:destination="@id/main_view" />
+            android:id="@+id/navigate_from_startScreenFragment_to_startMenuFragment"
+            app:destination="@id/startMenuFragment" />
     </fragment>
 
     <fragment
-        android:id="@+id/main_view"
-        android:label="fragment_new_test"
-        tools:layout="@layout/fragment_start"/>
+        android:id="@+id/startMenuFragment"
+        android:name="se.gpsappkmm.gpsappkmm.android.ui.newtest.StartMenuFragment"
+        android:label="fragment_start_menu"
+        tools:layout="@layout/fragment_start_menu">
+        <action
+            android:id="@+id/navigateToFormFragment"
+            app:destination="@id/formFragment" />
+    </fragment>
+
+    <fragment
+        android:id="@+id/formFragment"
+        android:name="se.gpsappkmm.gpsappkmm.android.ui.form.FormFragment"
+        android:label="FormFragment"/>
 
 </navigation>

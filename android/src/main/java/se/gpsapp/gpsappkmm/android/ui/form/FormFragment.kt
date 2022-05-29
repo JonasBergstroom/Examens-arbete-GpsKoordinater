@@ -13,7 +13,6 @@ import se.gpsappkmm.gpsappkmm.android.MainApplication
 import se.gpsappkmm.gpsappkmm.android.R
 import se.gpsappkmm.gpsappkmm.android.databinding.FragmentFormBinding
 import se.gpsappkmm.gpsappkmm.android.forms.AndroidFormGenerator
-import se.gpsappkmm.gpsappkmm.forms.FormViewModel
 import se.gpsappkmm.gpsappkmm.forms.components.FormComponent
 
 class FormFragment : Fragment() {

@@ -1,6 +1,7 @@
 package se.gpsappkmm.gpsappkmm.android
 
 import android.app.Application
+import se.gpsappkmm.gpsappkmm.forms.FormViewModel
 import se.gpsappkmm.gpsappkmm.forms.forms.FormType
 
 class MainApplication : Application() {

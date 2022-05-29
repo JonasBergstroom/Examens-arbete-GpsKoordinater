@@ -8,26 +8,26 @@ import androidx.fragment.app.Fragment
 import androidx.navigation.findNavController
 import se.gpsappkmm.gpsappkmm.android.MainApplication
 import se.gpsappkmm.gpsappkmm.android.R
-import se.gpsappkmm.gpsappkmm.android.databinding.FragmentNewTestBinding
+import se.gpsappkmm.gpsappkmm.android.databinding.FragmentStartMenuBinding
 import se.gpsappkmm.gpsappkmm.forms.forms.FormType
 
 class StartMenuFragment : Fragment() {
 
-    private var fragmentNewTestBinding: FragmentNewTestBinding? = null
+    private var fragmentStartMenuBinding: FragmentStartMenuBinding? = null
 
     override fun onCreateView(
         inflater: LayoutInflater, container: ViewGroup?,
         savedInstanceState: Bundle?
     ): View? {
-        val view = inflater.inflate(R.layout.fragment_new_test, container, false)
-        val binding = FragmentNewTestBinding.bind(view)
+        val view = inflater.inflate(R.layout.fragment_start_menu, container, false)
+        val binding = FragmentStartMenuBinding.bind(view)
         val application = (activity?.application as MainApplication)
 
         binding.gobackBtn.setOnClickListener {
             view.findNavController().navigateUp()
         }
-        binding.test3Container.setOnClickListener {
-            application.setViewModel(formType = FormType.Infiltration)
+        binding.startContainer.setOnClickListener {
+            application.setViewModel(formType = FormType.Start)
             view.findNavController().navigate(R.id.navigateToFormFragment)
         }
 
@@ -36,6 +36,6 @@ class StartMenuFragment : Fragment() {
 
     override fun onDestroy() {
         super.onDestroy()
-        fragmentNewTestBinding = null
+        fragmentStartMenuBinding = null
     }
 }

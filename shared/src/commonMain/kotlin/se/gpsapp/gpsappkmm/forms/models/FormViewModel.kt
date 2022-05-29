@@ -1,4 +1,4 @@
-package se.gpsappkmm.gpsappkmm.forms
+package se.gpsapp.gpsappkmm.forms.models
 
 import se.gpsappkmm.gpsappkmm.forms.components.*
 import se.gpsappkmm.gpsappkmm.forms.forms.Form

@@ -1,5 +1,7 @@
 package se.gpsapp.gpsappkmm.forms.forms
 
+import se.gpsapp.gpsappkmm.forms.models.FormData
+import se.gpsapp.gpsappkmm.forms.models.FormDataMapiOS
 import se.gpsappkmm.gpsappkmm.forms.components.*
 import se.gpsappkmm.gpsappkmm.forms.forms.Form
 import se.gpsappkmm.gpsappkmm.forms.forms.FormType
@@ -7,6 +9,7 @@ import se.gpsappkmm.gpsappkmm.forms.forms.FormType
 
 data class FormStart(
     override val type: FormType = FormType.Start,
+    override val data: FormData = FormDataMapiOS(),
 ) : Form {
     override val screens: List<FormScreen> = listOf(
         FormScreen
@@ -173,9 +176,9 @@ data class FormStart(
                     id = "sammanfattningInfoBodyScreen9",
                     type = ComponentType.BODY,
                     text = "There are many variations of passages of Lorem Ipsum available, but the majority have suffered alteration in some form, by injected humour, or randomised words which don't look even slightly believable. If you are going to use a passage of Lorem Ipsum, you need to be sure there isn't anything embarrassing hidden in the middle of text. All the Lorem Ipsum generators on the Internet tend to repeat predefined chunks as necessary, making this the first true generator on the Internet."),
-                ),
+            ),
         ),
-         FormScreen(
+        FormScreen(
             components = listOf<FormComponent>(
                 FormComponentText(
                     id = "sammanfattningTitleScreen9",

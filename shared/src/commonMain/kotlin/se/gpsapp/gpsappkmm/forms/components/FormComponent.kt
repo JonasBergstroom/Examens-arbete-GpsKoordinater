@@ -5,7 +5,7 @@ enum class ComponentType {
     TITLESMALL,
     BODY,
     IMAGE,
-    EMPTYLINE,
+    MAPS,
 }
 
 interface FormComponent {
@@ -27,10 +27,10 @@ class FormComponentImage(
     val caption: String,
 ) : FormComponent
 
-class FormComponentLine(
+class FormComponentMap(
     override val type: ComponentType,
     override val id: String,
-    val text: String
 ) : FormComponent
+
 
 

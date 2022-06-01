@@ -1,5 +1,5 @@
 package se.gpsapp.gpsappkmm.forms.models
 
-data class FormDataMapiOS(
+data class FormDataStart(
     override val coordinates: Coordinates = Coordinates(),
 ) : FormData

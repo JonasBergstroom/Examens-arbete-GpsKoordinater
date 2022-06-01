@@ -1,7 +1,7 @@
 package se.gpsapp.gpsappkmm.forms.forms
 
 import se.gpsapp.gpsappkmm.forms.models.FormData
-import se.gpsapp.gpsappkmm.forms.models.FormDataMapiOS
+import se.gpsapp.gpsappkmm.forms.models.FormDataStart
 import se.gpsappkmm.gpsappkmm.forms.components.*
 import se.gpsappkmm.gpsappkmm.forms.forms.Form
 import se.gpsappkmm.gpsappkmm.forms.forms.FormType
@@ -9,46 +9,26 @@ import se.gpsappkmm.gpsappkmm.forms.forms.FormType
 
 data class FormStart(
     override val type: FormType = FormType.Start,
-    override val data: FormData = FormDataMapiOS(),
+    override val data: FormData = FormDataStart(),
 ) : Form {
     override val screens: List<FormScreen> = listOf(
         FormScreen
             (
             components = listOf<FormComponent>(
                 FormComponentText(
-                    id = "inledningTitleScreen1",
-                    type = ComponentType.TITLESMALL,
-                    text = "Inledning"
-                ),
-                FormComponentText(
                     id = "inledningBodyScreen1",
                     type = ComponentType.BODY,
                     text = "Lorem ipsum, or lipsum as it is sometimes known, is dummy text used in laying out print, graphic or web designs. The passage is attributed to an unknown typesetter in the 15th century who is thought to have scrambled parts of Cicero\\'s De Finibus Bonorum et Malorum for use in a type specimen book. It usually begins with:\n" +
                             "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua."
                 ),
-                FormComponentText(
-                    id = "syfteTitleScreen1",
-                    type = ComponentType.TITLESMALL,
-                    text = "Syfte"
-                ),
-                FormComponentText(
-                    id = "syfteBodyScreen1",
-                    type = ComponentType.BODY,
-                    text = "Lorem ipsum, or lipsum as it is sometimes known, is dummy text used in laying out print, graphic or web designs. The passage is attributed to an unknown typesetter in the 15th century who is thought to have scrambled parts of Cicero\\'s De Finibus Bonorum et Malorum for use in a type specimen book. It usually begins with:\n"
-                ),
-                FormComponentText(
-                    id = "tipsTitleScreen1",
-                    type = ComponentType.TITLESMALL,
-                    text = "Tips!"
-                ),
-                FormComponentText(
-                    id = "tipsBodyScreen1",
-                    type = ComponentType.BODY,
-                    text = "Lorem ipsum, or lipsum as it is sometimes known, is dummy text used in laying out print, graphic or web designs."
+                FormComponentImage(
+                    id = "GpsImageScreen1",
+                    type = ComponentType.IMAGE,
+                    caption = "Foto från....",
+                    image = "startscreen_gps"
                 ),
             ),
         ),
-
         FormScreen(
             components = listOf<FormComponent>(
                 FormComponentText(
@@ -73,38 +53,17 @@ data class FormStart(
         FormScreen(
             components = listOf<FormComponent>(
                 FormComponentText(
-                    id = "historiaTitleScreen3",
-                    type = ComponentType.TITLESMALL,
-                    text = "Historia"
-                ),
-                FormComponentText(
-                    id = "historiaBodyScreen3",
-                    type = ComponentType.BODY,
-                    text = "Lorem ipsum, or lipsum as it is sometimes known, is dummy text used in laying out print, graphic or web designs. The passage is attributed to an unknown typesetter in the 15th century who is thought to have scrambled parts of Cicero\\'s De Finibus Bonorum et Malorum for use in a type specimen book. It usually begins with:\n" +
-                            "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua."
-                ),
-                FormComponentImage(
-                    id = "GpsImageScreen3",
-                    type = ComponentType.IMAGE,
-                    caption = "Foto från....",
-                    image = "startscreen_gps"
-                ),
-            ),
-        ),
-        FormScreen(
-            components = listOf<FormComponent>(
-                FormComponentText(
-                    id = "användningTitleScreen4",
+                    id = "användningTitleScreen3",
                     type = ComponentType.TITLESMALL,
                     text = "Användning av GPS",
                 ),
                 FormComponentText(
-                    id = "användningBodyScreen4",
+                    id = "användningBodyScreen3",
                     type = ComponentType.BODY,
                     text = "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
                 ),
                 FormComponentImage(
-                    id = "GpsImageScreen7",
+                    id = "GpsImageScreen3",
                     type = ComponentType.IMAGE,
                     caption = "Gräv din grop.",
                     image = "startscreen_gps"
@@ -114,12 +73,12 @@ data class FormStart(
         FormScreen(
             components = listOf<FormComponent>(
                 FormComponentText(
-                    id = "GpsKoordinaterTitleScreen5",
+                    id = "GpsKoordinaterTitleScreen4",
                     type = ComponentType.TITLESMALL,
                     text = "GPS-Koordinater"
                 ),
                 FormComponentText(
-                    id = "tipsBodyScreen5",
+                    id = "tipsBodyScreen4",
                     type = ComponentType.BODY,
                     text = "Lorem ipsum, or lipsum as it is sometimes known, is dummy text used in laying out print, graphic or web designs. The passage is attributed to an unknown typesetter in the 15th century who is thought to have scrambled parts of Cicero\\'s De Finibus Bonorum et Malorum for use in a type specimen book. \\n\\nIt usually begins with:\n" +
                             "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua."
@@ -129,15 +88,33 @@ data class FormStart(
         FormScreen(
             components = listOf<FormComponent>(
                 FormComponentText(
-                    id = "Gps-KoordinaterTitleScreen6",
+                    id = "Gps-KoordinaterTitleScreen5",
                     type = ComponentType.TITLESMALL,
                     text = "GPS-Koordinater"
                 ),
                 FormComponentText(
-                    id = "Gps-KoordinaterBodyScreen6",
+                    id = "Gps-KoordinaterBodyScreen5",
                     type = ComponentType.BODY,
                     text = "Lorem ipsum, or lipsum as it is sometimes known, is dummy text used in laying out print, graphic or web designs. The passage is attributed to an unknown typesetter in the 15th century who is thought to have scrambled parts of Cicero\\'s De Finibus Bonorum et Malorum for use in a type specimen book. \\n\\nIt usually begins with:\n" +
                             "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua."
+                ),
+            ),
+        ),
+        FormScreen(
+            components = listOf<FormComponent>(
+                FormComponentText(
+                    id = "platsTitleScreen6",
+                    type = ComponentType.TITLESMALL,
+                    text = "Plats",
+                ),
+                FormComponentText(
+                    id = "platsBodyScreen6",
+                    type = ComponentType.BODY,
+                    text = "Tryck på kartan för att välja din exakta position",
+                ),
+                FormComponentMap(
+                    id = "mapScreen6",
+                    type = ComponentType.MAPS,
                 ),
             ),
         ),
@@ -176,9 +153,9 @@ data class FormStart(
                     id = "sammanfattningInfoBodyScreen9",
                     type = ComponentType.BODY,
                     text = "There are many variations of passages of Lorem Ipsum available, but the majority have suffered alteration in some form, by injected humour, or randomised words which don't look even slightly believable. If you are going to use a passage of Lorem Ipsum, you need to be sure there isn't anything embarrassing hidden in the middle of text. All the Lorem Ipsum generators on the Internet tend to repeat predefined chunks as necessary, making this the first true generator on the Internet."),
-            ),
+                ),
         ),
-        FormScreen(
+         FormScreen(
             components = listOf<FormComponent>(
                 FormComponentText(
                     id = "sammanfattningTitleScreen9",

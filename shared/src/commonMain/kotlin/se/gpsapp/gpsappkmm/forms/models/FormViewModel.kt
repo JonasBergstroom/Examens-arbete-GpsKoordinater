@@ -16,6 +16,16 @@ class FormViewModel constructor(
         }
     }
 
+    fun setCoordinates(latitude: Double, longitude: Double) =
+        state.value.components.firstOrNull {
+            it is FormComponentMap
+        }.let {
+            updateStateAndSave {
+                form.setCoordinates(latitude, longitude, state.value)
+                    .copy(counter = counter + 1)
+            }
+        }
+
     fun previousScreen() {
         if (state.value.currentScreen > 0) {
             updateStateAndSave {

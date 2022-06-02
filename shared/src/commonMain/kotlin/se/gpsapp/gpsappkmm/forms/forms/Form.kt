@@ -22,6 +22,7 @@ interface Form {
     }
 }
 
-enum class FormType {
+
+    enum class FormType {
     Start,
 }

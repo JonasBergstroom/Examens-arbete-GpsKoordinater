@@ -65,7 +65,7 @@ data class FormStart(
                 FormComponentImage(
                     id = "GpsImageScreen3",
                     type = ComponentType.IMAGE,
-                    caption = "Gräv din grop.",
+                    caption = "",
                     image = "startscreen_gps"
                 ),
             ),
@@ -110,7 +110,7 @@ data class FormStart(
                 FormComponentText(
                     id = "platsBodyScreen6",
                     type = ComponentType.BODY,
-                    text = "Tryck på kartan för att välja din exakta position",
+                    text = "Tryck på kartan för att att få ut koordinaterna, du kan välja flera platser.",
                 ),
                 FormComponentMap(
                     id = "mapScreen6",

@@ -117,10 +117,10 @@
 		2EEFFD0028494946002619FE /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		9D07BE0627BBC39B00FF1D55 /* IOSFormGenerator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = IOSFormGenerator.swift; path = ../../gpsappKMMiOS/Forms/IOSFormGenerator.swift; sourceTree = "<group>"; };
 		9D07BE1227BBFE7A00FF1D55 /* UIFont.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = UIFont.swift; path = ../../../gpsappKMMiOS/Common/Extensions/UIFont.swift; sourceTree = "<group>"; };
-		9D07BE1727BBFF1B00FF1D55 /* OpenSans-Regular.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "OpenSans-Regular.ttf"; sourceTree = "<group>"; };
-		9D07BE1A27BBFF1B00FF1D55 /* OpenSans-Italic.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "OpenSans-Italic.ttf"; sourceTree = "<group>"; };
-		9D07BE1C27BBFF1B00FF1D55 /* OpenSans-SemiBold.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "OpenSans-SemiBold.ttf"; sourceTree = "<group>"; };
-		9D07BE1D27BBFF1B00FF1D55 /* OpenSans-Bold.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "OpenSans-Bold.ttf"; sourceTree = "<group>"; };
+		9D07BE1727BBFF1B00FF1D55 /* OpenSans-Regular.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; name = "OpenSans-Regular.ttf"; path = "../../../../../Gps /ios/GpsAppKMMiOS/Resources/Fonts/OpenSans-Regular.ttf"; sourceTree = "<group>"; };
+		9D07BE1A27BBFF1B00FF1D55 /* OpenSans-Italic.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; name = "OpenSans-Italic.ttf"; path = "../../../../../Gps /ios/GpsAppKMMiOS/Resources/Fonts/OpenSans-Italic.ttf"; sourceTree = "<group>"; };
+		9D07BE1C27BBFF1B00FF1D55 /* OpenSans-SemiBold.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; name = "OpenSans-SemiBold.ttf"; path = "../../../../../Gps /ios/GpsAppKMMiOS/Resources/Fonts/OpenSans-SemiBold.ttf"; sourceTree = "<group>"; };
+		9D07BE1D27BBFF1B00FF1D55 /* OpenSans-Bold.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; name = "OpenSans-Bold.ttf"; path = "../../../../../Gps /ios/GpsAppKMMiOS/Resources/Fonts/OpenSans-Bold.ttf"; sourceTree = "<group>"; };
 		9D34C50927A14C740043B5A1 /* gpsapp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = gpsapp.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		9D34C50C27A14C740043B5A1 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = AppDelegate.swift; path = ../gpsappKMMiOS/AppDelegate.swift; sourceTree = "<group>"; };
 		9D34C50E27A14C740043B5A1 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = SceneDelegate.swift; path = ../gpsappKMMiOS/SceneDelegate.swift; sourceTree = "<group>"; };

@@ -61,7 +61,11 @@ data class FormStart(
                 FormComponentText(
                     id = "användningBodyScreen3",
                     type = ComponentType.BODY,
-                    text = "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
+                    text = "GPS hjälper oss att hitta rätt, till sjöss, på land och i luften. Satelliter sänder ut information om sin tid och position. GPS-mottagaren tar emot information från flera satelliter och kan på så sätt räkna ut exakt var den är.\n" +
+                            "\n" +
+                            "GPS utvecklades av den amerikanska militären. För att skydda tekniken hade den en störsignal. Under Gulfkriget 1990 höll USA reda på positioner för trupper och mål i Irak med GPS. Störsignalen stängdes av och för bilister och fritidsseglare i vår del av världen blev GPS—positionerna plötsligt mer exakta.\n" +
+                            "\n" +
+                            "Numera finns GPS i varje mobiltelefon och det finns till och med skor med GPS. I framtiden kommer vi alltid att veta var vi är.",
                 ),
                 FormComponentImage(
                     id = "GpsImageScreen3",
@@ -181,8 +185,9 @@ data class FormStart(
                 FormComponentText(
                     id = "sammanfattningInfoBodyScreen9",
                     type = ComponentType.BODY,
-                    text = "Lorem ipsum, or lipsum as it is sometimes known, is dummy text used in laying out print, graphic or web designs. The passage is attributed to an unknown typesetter in the 15th century who is thought to have scrambled parts of Cicero\\'s De Finibus Bonorum et Malorum for use in a type specimen book. \\n\\nIt usually begins with:\n" +
-                            "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
+                    text = "Sammanfattningsvis så har användningen av GPS vart till stor fördel för hela världen.\n" +
+                            "\n" +
+                            "Som till en början skapats för det militära syftet, som idag används som en vardaglig teknologi som alla har tillgång till.",
                 ),
                 FormComponentImage(
                     id = "GpsImageScreen9",

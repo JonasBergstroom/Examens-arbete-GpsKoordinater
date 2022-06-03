@@ -18,14 +18,14 @@ data class FormStart(
                 FormComponentText(
                     id = "inledningBodyScreen1",
                     type = ComponentType.BODY,
-                    text = "Lorem ipsum, or lipsum as it is sometimes known, is dummy text used in laying out print, graphic or web designs. The passage is attributed to an unknown typesetter in the 15th century who is thought to have scrambled parts of Cicero\\'s De Finibus Bonorum et Malorum for use in a type specimen book. It usually begins with:\n" +
-                            "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua."
+                    text = "Tips:\n" +
+                            "\nDet kommer ett litet kunskapstest på slutet, så läs noga! "
                 ),
                 FormComponentImage(
                     id = "GpsImageScreen1",
                     type = ComponentType.IMAGE,
-                    caption = "Foto från....",
-                    image = "startscreen_gps"
+                    caption = "",
+                    image = "kunskaps_test"
                 ),
             ),
         ),
@@ -39,14 +39,15 @@ data class FormStart(
                 FormComponentText(
                     id = "historiaBodyScreen2",
                     type = ComponentType.BODY,
-                    text = "Lorem ipsum, or lipsum as it is sometimes known, is dummy text used in laying out print, graphic or web designs. The passage is attributed to an unknown typesetter in the 15th century who is thought to have scrambled parts of Cicero\\'s De Finibus Bonorum et Malorum for use in a type specimen book. It usually begins with:\n" +
-                            "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua."
+                    text = "GPS har sitt ursprung i Sputnik-eran då forskare kunde spåra satelliten med skiftningar i dess radiosignal, känd som \"Dopplereffekten\". Den amerikanska flottan genomförde satellitnavigeringsexperiment i mitten av 1960-talet för att spåra amerikanska ubåtar som bär kärnvapenmissiler. Med sex satelliter som kretsade runt polerna kunde ubåtar observera satellitförändringarna i Doppler och lokalisera ubåtens plats inom några minuter.\n" +
+                            "\n" +
+                            "I början av 1970-talet ville försvarsdepartementet (DoD) säkerställa att ett robust, stabilt satellitnavigeringssystem skulle finnas tillgängligt. Genom att omfamna tidigare idéer från marinens forskare, beslutade DoD att använda satelliter för att stödja deras föreslagna navigationssystem. DoD följde sedan upp och lanserade sin första Navigation System with Timing and Ranging (NAVSTAR)-satellit 1978. 24-satellitsystemet blev fullt operativt 1993."
                 ),
                 FormComponentImage(
                     id = "GpsImageScreen2",
                     type = ComponentType.IMAGE,
-                    caption = "Foto från....",
-                    image = "startscreen_gps"
+                    caption = "",
+                    image = "gps_historia"
                 ),
             ),
         ),
@@ -66,7 +67,7 @@ data class FormStart(
                     id = "GpsImageScreen3",
                     type = ComponentType.IMAGE,
                     caption = "",
-                    image = "startscreen_gps"
+                    image = "anvandning_av_gps"
                 ),
             ),
         ),
@@ -80,8 +81,13 @@ data class FormStart(
                 FormComponentText(
                     id = "tipsBodyScreen4",
                     type = ComponentType.BODY,
-                    text = "Lorem ipsum, or lipsum as it is sometimes known, is dummy text used in laying out print, graphic or web designs. The passage is attributed to an unknown typesetter in the 15th century who is thought to have scrambled parts of Cicero\\'s De Finibus Bonorum et Malorum for use in a type specimen book. \\n\\nIt usually begins with:\n" +
-                            "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua."
+                    text = "Koordinaterna anges i breddgrader och längdgrader Ekvatorn är en latitud som ligger på breddgraden 0° och som delar upp jordklotet i två delar, den norra (N) och den södra (S). Breddgraden för nordpolen är 90° N och för sydpolen 90° S, tillsammans alltså 180°."
+                ),
+                FormComponentImage(
+                    id = "GpsImageScreen4",
+                    type = ComponentType.IMAGE,
+                    caption = "",
+                    image = "gps_koordinater"
                 ),
             ),
         ),
@@ -95,8 +101,15 @@ data class FormStart(
                 FormComponentText(
                     id = "Gps-KoordinaterBodyScreen5",
                     type = ComponentType.BODY,
-                    text = "Lorem ipsum, or lipsum as it is sometimes known, is dummy text used in laying out print, graphic or web designs. The passage is attributed to an unknown typesetter in the 15th century who is thought to have scrambled parts of Cicero\\'s De Finibus Bonorum et Malorum for use in a type specimen book. \\n\\nIt usually begins with:\n" +
-                            "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua."
+                    text = "Longitud har en mycket mer komplicerad historia eftersom det är mycket svårare att bestämma utan GPS. Longitud är vinkeln som bildas av en linje från jordens centrum till nollmeridianen vid Greenwich England och en linje från jordens centrum till din plats. (En meridian är en longitudlinje som går från pol till pol.) Eftersom jorden roterar 360 grader varje dag, är det nödvändigt att veta tiden mycket exakt för att relatera solens läge till denna vinkel. Engelsmännen var mycket engagerade i sjöfarten och utvecklingen av en noggrann, sjögående klocka så att de exakt kunde beräkna rätt longitud. De valde att använda Royal Observatory i Greenwich, London, England för sin referensmeridian. (Besök http://millennium-dome.com/info/conference.htm för mer information) Longituden sträcker sig från väst (negativ) 180 grader till öst (positiv) 180 grader.\n" +
+                            "\n" +
+                            "Latitud och Longitud registreras ofta som grader, minuter och sekunder. Ptolemaios (cirka 150 e.Kr.) delade upp graderna i 60 delar och de delarna i 60 delar. \"I den latinska översättningen av texten blev dessa underavdelningar partes minutae primae och partes minutae secundae varifrån våra \"minuter\" och \"sekunder\" av bågen kommer från.\" (Brown, The Story of Maps, sid 60) Detta kan vara besvärligt så du kan använda decimalgrader. GIS-system måste använda detta enklare format. Den här tabellen nedan visar precisionen för olika enheter i den norra USA-regionen. Observera att en longitud är cirka 69 miles vid ekvatorn och 0 miles vid polerna. Latitud är alltid cirka 69 miles."
+                ),
+                FormComponentImage(
+                    id = "GpsImageScreen5",
+                    type = ComponentType.IMAGE,
+                    caption = "",
+                    image = "gps_koordinaterr"
                 ),
             ),
         ),
@@ -123,22 +136,17 @@ data class FormStart(
                 FormComponentText(
                     id = "testaTitleScreen7",
                     type = ComponentType.TITLESMALL,
-                    text = "Testa själv"
-                ),
-                FormComponentText(
-                    id = "görsåhärTitleScreen7",
-                    type = ComponentType.TITLESMALL,
-                    text = "Gör så här"
+                    text = "Sextant"
                 ),
                 FormComponentText(
                     id = "görSåHärBodyScreen7",
                     type = ComponentType.BODY,
-                    text = "1. Lorem ipsum oder Lipsum, wie es manchmal genannt wird, ist ein Blindtext, der beim Layout von Druck-, Grafik- oder Webdesigns verwendet wird. \n\n2. Gießen Sie es vorsichtig bis zu einer Wasserhöhe von etwa 10 cm in das Wasser. Gießen Sie gegen das Hand, damit das Risiko verringert wird, dass Wasser die Poren verstopft, sodass es nicht an der Unterkante des Zylinders ausläuft \n\n3 Messen Sie den Abstand (mm) zwischen der Wasseroberfläche und der Oberkante des Zylinders. Machen Sie eine Markierung an der Kante, an der Sie messen. Neigen Sie ein wenig, damit Sie wissen müssen, wo Sie zuerst gemessen haben, wenn Sie erneut messen. Starten Sie die Zeitmessung, verwenden Sie den Timer in Ihrem Telefon. Messen Sie etwa 30 Minuten lang. \n\n4. Stoppen Sie nach ca. 30 Minuten den Timer. Messen Sie erneut den Abstand (mm) zwischen der Wasseroberfläche und der Oberkante des Zylinders (an der Markierung). \n\nACHTUNG! Die Infiltration kann manchmal sehr schnell gehen, dann stoppen Sie den Timer sofort, wenn das gesamte Wasser eingedrungen ist! \n\nWenn das Eindringen extrem schnell geht, sind Sie möglicherweise über einem großen Riss gelandet. Bewegen Sie dann den Zylinder und wiederholen Sie den Test. \n\nWenn das Eindringen sehr langsam ist k Sie können auch länger als 30 Minuten messen, wenn Sie möchten."),
+                    text = "Sextanten har sin främsta användning vid navigation till sjöss, där den oftast används för uppmätning av solens eller andra himlakroppars höjd över horisonten. Både solen och horisonten iakttas genom samma okular och vinkeln mellan dessa avläses på den graderade skalan i nerdelen av instrumentet. Solens höjd över horisonten vid ett visst klockslag och en viss dag på året är alltid densamma. Med hjälp av tabellverk kan man på detta sätt fastställa vilken latitud man befinner sig på. Genom flera mätningar vid bestämda klockslag kan man också fastställa vilken longitud man befinner sig på. Skärningspunkten mellan latitud och longitud ger positionen på jordklotet."),
                 FormComponentImage(
                     id = "GpsImageScreen7",
                     type = ComponentType.IMAGE,
-                    caption = "Foto från....",
-                    image = "startscreen_gps"
+                    caption = "",
+                    image = "testa_koordinater"
                 ),
             ),
         ),
@@ -150,10 +158,18 @@ data class FormStart(
                     text = "GPS-Koordinater idag"
                 ),
                 FormComponentText(
-                    id = "sammanfattningInfoBodyScreen9",
+                    id = "GpsIdagBodyScreen8",
                     type = ComponentType.BODY,
-                    text = "There are many variations of passages of Lorem Ipsum available, but the majority have suffered alteration in some form, by injected humour, or randomised words which don't look even slightly believable. If you are going to use a passage of Lorem Ipsum, you need to be sure there isn't anything embarrassing hidden in the middle of text. All the Lorem Ipsum generators on the Internet tend to repeat predefined chunks as necessary, making this the first true generator on the Internet."),
+                    text = "Från gruvdrift till flyg, jordbruk till marin, rekreation till försvar, det finns många applikationer för GPS-teknik. Nuförtiden använder alla från läkare, forskare, bönder, soldater, piloter, vandrare, leveransförare, sjömän, fiskare, avsändare, idrottare och människor från många andra samhällsskikt GPS-system på ett sätt som gör deras arbete mer produktivt, säkrare och lättare.\n" +
+                            "\n" +
+                            "De tre huvudsakliga industriella användningsområdena för GPS inkluderar precisionsjordbruk, fordon och försvar. I varje exempel löser GPS ett positioneringsproblem. Idag finns det många olika GPS-apparater för att enkelt kunna ta reda på sin position samt koordinater, nu finns också samma funktioner på våra smartphones."),
+            FormComponentImage(
+                id = "GpsImageScreen8",
+                type = ComponentType.IMAGE,
+                caption = "",
+                image = "gps_idag"
                 ),
+            ),
         ),
          FormScreen(
             components = listOf<FormComponent>(
@@ -168,6 +184,12 @@ data class FormStart(
                     text = "Lorem ipsum, or lipsum as it is sometimes known, is dummy text used in laying out print, graphic or web designs. The passage is attributed to an unknown typesetter in the 15th century who is thought to have scrambled parts of Cicero\\'s De Finibus Bonorum et Malorum for use in a type specimen book. \\n\\nIt usually begins with:\n" +
                             "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
                 ),
+                FormComponentImage(
+                    id = "GpsImageScreen9",
+                    type = ComponentType.IMAGE,
+                    caption = "",
+                    image = "gps_sammanfattning"
+                ),
             ),
         ),
         FormScreen(
@@ -180,49 +202,29 @@ data class FormStart(
                 FormComponentText(
                     id = "kunskapstestInfoBodyScreen10",
                     type = ComponentType.BODY,
-                    text = "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
+                    text = "Här kommer ett litet kunskapstest för de som vill.",
                 ),
                 FormComponentText(
                     id = "Fråga1TitleScreen10",
                     type = ComponentType.TITLESMALL,
-                    text = "Fråga 1"
+                    text = "Vad används Gps-koordinater till?"
                 ),
                 FormComponentText(
                     id = "Fråga2TitleScreen10",
                     type = ComponentType.TITLESMALL,
-                    text = "Fråga 2"
+                    text = "Hur skiljer sig Longitud från Latitud?"
                 ), FormComponentText(
                     id = "Fråga3TitleScreen10",
                     type = ComponentType.TITLESMALL,
-                    text = "Fråga 3"
+                    text = "När sköts den första satelliten upp i rymden?"
                 ), FormComponentText(
                     id = "Fråga4TitleScreen10",
                     type = ComponentType.TITLESMALL,
-                    text = "Fråga 4"
+                    text = "Kan man ta reda på Gps-koordinater utan modern teknik?"
                 ), FormComponentText(
                     id = "Fråga5TitleScreen10",
                     type = ComponentType.TITLESMALL,
-                    text = "Fråga 5"
-                ), FormComponentText(
-                    id = "Fråga6TitleScreen10",
-                    type = ComponentType.TITLESMALL,
-                    text = "Fråga 6"
-                ), FormComponentText(
-                    id = "Fråga7TitleScreen10",
-                    type = ComponentType.TITLESMALL,
-                    text = "Fråga 7"
-                ), FormComponentText(
-                    id = "Fråga8TitleScreen10",
-                    type = ComponentType.TITLESMALL,
-                    text = "Fråga 8"
-                ), FormComponentText(
-                    id = "Fråga9TitleScreen10",
-                    type = ComponentType.TITLESMALL,
-                    text = "Fråga 9"
-                ), FormComponentText(
-                    id = "Fråga10TitleScreen10",
-                    type = ComponentType.TITLESMALL,
-                    text = "Fråga 10"
+                    text = "Hur använts det gammla verktyget för att ta reda på koordinaterna?"
                 ),
             ),
         ),

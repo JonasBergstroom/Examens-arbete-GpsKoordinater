@@ -105,6 +105,42 @@ extension UIStackView {
         self.addArrangedSubview(verticalSpace)
         self.addArrangedSubview(label)
     }
+    
+    func addGridImages(id: String,names:String,captions:String) -> UIStackView{
+        let imageStackView = UIStackView()
+        imageStackView.axis = .vertical
+        imageStackView.distribution = .fillEqually
+        imageStackView.alignment = .center
+        imageStackView.spacing = 5
+        imageStackView.translatesAutoresizingMaskIntoConstraints = false
+        
+        let imageView = UIImageView()
+        imageView.image = UIImage(named: names)
+        imageView.contentMode = .scaleAspectFit
+        imageView.frame.size = CGSize(width: 10, height: 10)
+        
+        let captionStackView = UIStackView()
+        captionStackView.axis = .vertical
+        captionStackView.distribution = .fillEqually
+        captionStackView.alignment = .center
+        captionStackView.spacing = 5
+        captionStackView.translatesAutoresizingMaskIntoConstraints = false
+        
+        let label = UILabel()
+        label.text = captions
+        captionStackView.addArrangedSubview(label)
+        
+        let verticalSpace = getVerticalSpacingView(withHeight: 50)
+        
+        imageStackView.addArrangedSubview(verticalSpace)
+        imageStackView.addArrangedSubview(imageView)
+        imageStackView.addArrangedSubview(captionStackView)
+        
+        return imageStackView
+    }
+    
+    
+    
 
     func addBigTitleLabel(screenTag: Int,text: String) {
         if self.subviews.first(where: { view in view.tag == screenTag }) == nil {

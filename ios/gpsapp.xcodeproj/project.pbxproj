@@ -15,6 +15,7 @@
 		2ED3CBA12848D3C200CCF4AB /* StartMenuViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2ED3CBA02848D3C200CCF4AB /* StartMenuViewController.swift */; };
 		2EE8EB66284734CE002D9760 /* StartMenuViewController.xib in Sources */ = {isa = PBXBuildFile; fileRef = 2EE8EB65284734CE002D9760 /* StartMenuViewController.xib */; };
 		2EE8EB692847717B002D9760 /* StartScreenViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 2EE8EB682847717B002D9760 /* StartScreenViewController.xib */; };
+		2EEFFD0128494946002619FE /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 2EEFFD0028494946002619FE /* Assets.xcassets */; };
 		9D07BE0727BBC39B00FF1D55 /* IOSFormGenerator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9D07BE0627BBC39B00FF1D55 /* IOSFormGenerator.swift */; };
 		9D07BE0827BBC39B00FF1D55 /* IOSFormGenerator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9D07BE0627BBC39B00FF1D55 /* IOSFormGenerator.swift */; };
 		9D07BE0927BBC39B00FF1D55 /* IOSFormGenerator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9D07BE0627BBC39B00FF1D55 /* IOSFormGenerator.swift */; };
@@ -36,7 +37,6 @@
 		9D34C50D27A14C740043B5A1 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9D34C50C27A14C740043B5A1 /* AppDelegate.swift */; };
 		9D34C50F27A14C740043B5A1 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9D34C50E27A14C740043B5A1 /* SceneDelegate.swift */; };
 		9D34C51427A14C740043B5A1 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 9D34C51227A14C740043B5A1 /* Main.storyboard */; };
-		9D34C51627A14C760043B5A1 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 9D34C51527A14C760043B5A1 /* Assets.xcassets */; };
 		9D34C51927A14C760043B5A1 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 9D34C51727A14C760043B5A1 /* LaunchScreen.storyboard */; };
 		9D34C53E27A14E090043B5A1 /* AppLaunchManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9D34C53D27A14E090043B5A1 /* AppLaunchManager.swift */; };
 		9D34C53F27A14E090043B5A1 /* AppLaunchManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9D34C53D27A14E090043B5A1 /* AppLaunchManager.swift */; };
@@ -114,6 +114,7 @@
 		2ED3CBA02848D3C200CCF4AB /* StartMenuViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StartMenuViewController.swift; sourceTree = "<group>"; };
 		2EE8EB65284734CE002D9760 /* StartMenuViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = StartMenuViewController.xib; sourceTree = "<group>"; };
 		2EE8EB682847717B002D9760 /* StartScreenViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; name = StartScreenViewController.xib; path = ../../../gpsappKMMiOS/ViewControllers/StartScreenViewController/StartScreenViewController.xib; sourceTree = "<group>"; };
+		2EEFFD0028494946002619FE /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		9D07BE0627BBC39B00FF1D55 /* IOSFormGenerator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = IOSFormGenerator.swift; path = ../../gpsappKMMiOS/Forms/IOSFormGenerator.swift; sourceTree = "<group>"; };
 		9D07BE1227BBFE7A00FF1D55 /* UIFont.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = UIFont.swift; path = ../../../gpsappKMMiOS/Common/Extensions/UIFont.swift; sourceTree = "<group>"; };
 		9D07BE1727BBFF1B00FF1D55 /* OpenSans-Regular.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "OpenSans-Regular.ttf"; sourceTree = "<group>"; };
@@ -124,7 +125,6 @@
 		9D34C50C27A14C740043B5A1 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = AppDelegate.swift; path = ../gpsappKMMiOS/AppDelegate.swift; sourceTree = "<group>"; };
 		9D34C50E27A14C740043B5A1 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = SceneDelegate.swift; path = ../gpsappKMMiOS/SceneDelegate.swift; sourceTree = "<group>"; };
 		9D34C51327A14C740043B5A1 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
-		9D34C51527A14C760043B5A1 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; name = Assets.xcassets; path = ../gpsappKMMiOS/Assets.xcassets; sourceTree = "<group>"; };
 		9D34C51827A14C760043B5A1 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		9D34C51A27A14C760043B5A1 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		9D34C51F27A14C760043B5A1 /* gpsappTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = gpsappTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -258,7 +258,7 @@
 				9D34C50C27A14C740043B5A1 /* AppDelegate.swift */,
 				9D34C50E27A14C740043B5A1 /* SceneDelegate.swift */,
 				9D34C51227A14C740043B5A1 /* Main.storyboard */,
-				9D34C51527A14C760043B5A1 /* Assets.xcassets */,
+				2EEFFD0028494946002619FE /* Assets.xcassets */,
 				9D34C51727A14C760043B5A1 /* LaunchScreen.storyboard */,
 				9D34C51A27A14C760043B5A1 /* Info.plist */,
 			);
@@ -490,7 +490,6 @@
 				9D34C51927A14C760043B5A1 /* LaunchScreen.storyboard in Resources */,
 				9D07BE3427BBFF1C00FF1D55 /* OpenSans-SemiBold.ttf in Resources */,
 				9D5A8C8427DA258D00239E45 /* NavigationBar.xib in Resources */,
-				9D34C51627A14C760043B5A1 /* Assets.xcassets in Resources */,
 				9D34C54827A150180043B5A1 /* FormViewController.xib in Resources */,
 				9D34C54827A150180043B5A1 /* FormViewController.xib in Resources */,
 				2E57534427BFF44A00CB01E6 /* MapScreenViewController.xib in Resources */,
@@ -498,6 +497,7 @@
 				2EE8EB692847717B002D9760 /* StartScreenViewController.xib in Resources */,
 				9D07BE3727BBFF1C00FF1D55 /* OpenSans-Bold.ttf in Resources */,
 				9D07BE2527BBFF1C00FF1D55 /* OpenSans-Regular.ttf in Resources */,
+				2EEFFD0128494946002619FE /* Assets.xcassets in Resources */,
 				9D07BE2E27BBFF1C00FF1D55 /* OpenSans-Italic.ttf in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
